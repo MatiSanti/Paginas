@@ -1,0 +1,638 @@
+
+/***********************GLOBALES***********************/
+
+html{
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px**/
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+  
+*, *:before. *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Khand', sans-serif;
+    
+}
+
+.container {
+    min-width: 1024px;
+    width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+h1 {
+    font-size: 16rem;
+    line-height: 160px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 200px 0 0 0;
+}
+
+/***********************NAV***********************/
+
+.degrade {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    margin-top: 90px;
+    width: 1200px;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    margin: 0;
+    height: 80px;
+    padding: 0;
+    align-items: center;
+}
+
+.nav_link {
+    height: 80px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+    font-size: 5rem;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.nav_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav a img {
+    width: 100px;
+    padding: 0 30px 0 50px;
+}
+
+/***********************INDEX***********************/
+
+.section1 {
+    background-color: #BAE3FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin {
+    padding: 0 100px;
+}
+
+.image {
+    background-image: url(/img/llevar-mascotas-a-australia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+hr { 
+    border: 5px solid #FFFFFF;
+    width: 500px;
+    height:0;
+    position: absolute;
+    z-index: 0;
+}
+
+.main {
+    padding-bottom: 203px;
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.main p {
+    font-size: 6.5rem;
+    margin: 50px 0 0 0;
+    color: #FFFFFF;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+.button {
+    background-color: #000000;
+    width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: -30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.button a p , .button-reverse a p{
+    margin: 0;
+    font-size: 5rem;
+}
+
+.button:hover {
+    background-color: #FFFFFF
+}
+
+.button p:hover {
+    color: #000000;
+}
+
+.section2 {
+    background-color: #89d9dc;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/***********************ADOPTAR***********************/
+
+#adoptar {
+    padding-bottom: 70px;
+}
+
+.mascotas img {
+    width: 360px;
+    border-radius: 15px 15px 0 0;
+}
+
+.mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.masc {
+    margin: 30px;
+}
+
+.btn {
+    background-color: #000000;
+    border-radius: 0 0 15px 15px;
+    margin-top: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn a p {
+    color: #FFFFFF;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+}
+
+.btn a p:hover{
+    color: #000000;
+}
+
+/***********************ABOUT***********************/
+
+.about {
+    background-color: #EBE8AA;
+    margin: 0;
+    width: 100%;
+}
+
+.main-about , .main-contact{
+    display: flex;
+}
+
+.main-about p {
+    font-size: 2.405rem;
+}
+
+.text {
+    margin-top: 175px;
+    margin-left: 5rem;
+}
+
+.left-about {
+    padding: 0 50px;
+}
+
+.left-about img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/***********************CONTACT***********************/
+
+.main-contact {
+    margin: 0 50px;
+}
+
+.contact {
+    background-color: #AAEBD0;
+    margin: 0;
+    width: 100%;
+}
+
+.social-networks a {
+    margin: 0 30px 30px 30px;
+}
+
+i{
+    color: #FFFFFF;
+}
+
+.yt:hover{
+    color: #ff0000;
+}
+
+.ig:hover{
+    color: #873efc;
+}
+
+.fb:hover {
+    color: #1900ff;
+}
+
+.wpp:hover {
+    color: rgb(111, 185, 0);
+}
+
+.social-networks, .black{
+    display: flex;
+    justify-content: center;
+}
+
+.right-contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 210px;
+}
+
+.black{
+    border: 5px solid #000000;
+    width: 450px;
+    height:0px;
+    top: 350px;
+    display: flex;
+    margin: 0 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+input {
+    width: 650px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+select {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    padding-left: 5px;
+}
+
+textarea {
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 2rem;
+    font-family: 'Khand', sans-serif;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.btnForm {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border: 20px;
+}
+
+.btnForm:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 20px;
+}
+
+.warnings {
+    text-align: center;
+    font-size: 25px;
+}
+
+/***********************FOOTER***********************/
+
+footer {
+    width: 100%;
+    background-color: #000000;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-footer a {
+    padding: 0 3rem;
+}
+
+.nav-footer a p{
+    color: #FFFFFF;
+}
+
+.nav-footer a img {
+    width: 200px;
+}
+
+footer ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 50px;
+}
+
+.redsocial {
+    display: flex;
+    align-items: center;
+}
+
+.redsocial p {
+    margin: 27.5px 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+footer ul li a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    
+    
+    h1 {
+        font-size: 12rem;
+        line-height: 12rem;
+    }
+
+    hr {
+        width: 400px;
+    }
+
+    .main p {
+        font-size: 5rem;
+    }
+
+    .mascotas img {
+        width: 200px;
+    }
+
+    input , textarea{
+        width: 375px;
+    }
+
+    .black {
+        width: 400px;
+        margin: 0 50px;
+        top: 330px;
+    }
+
+    .main-contact {
+        margin: 0 50px;
+    }
+
+    .fa-10x {
+        font-size: 7em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+
+    h1 {
+        font-size: 10rem;
+        line-height: 10rem;
+    }
+
+    .nav {
+        height: 60px;
+    }
+
+    .degrade {
+        height: 60px;
+        width: 1000px;
+    }
+
+    .nav_link{
+        height: 60px;
+        font-size: 3.5rem;
+        padding-left: 2rem;
+    }
+    
+    .nav a img {
+        width: 70px;
+    }
+
+    .image {
+        background-size: 1512px;
+        background-position: -100px 0;
+    }
+
+    .main {
+        height: 768px;
+        padding-bottom: 0;
+    }
+
+    .left-contact img {
+        width: 400px;
+    }
+
+    .main-about {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about {
+        width: 100vh;
+    }
+
+    .text {
+        margin: 50px 0;
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .container {
+        min-width: 1000px;
+    }
+
+    .nav {
+        height: 80px;
+    }
+
+    .degrade {
+        height: 80px;
+        width: 1000px;
+    }
+
+    .nav_link {
+        font-size: 4rem;
+    }
+    
+    .nav a img {
+        width: 100px;
+    }
+
+    .mascotas img {
+        width: 340px;
+    }
+
+    .main {
+        height: 1920px;
+    }
+
+    .main h1 {
+        margin-top: 300px;
+        font-size: 16rem;
+        line-height: 16rem;
+    }
+
+    .main p {
+        font-size: 7rem;
+    }
+
+    .image {
+        background-image: none;
+        background-color: #e9a6ad;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 50px 0;
+    }
+
+    .button a p {
+        font-size: 10rem;
+    }
+
+    .main-contact {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left-contact h1 {
+        margin-left: 30px;
+    }
+
+    .left-contact img {
+        width: 0;
+    }
+
+    .right-contact {
+        margin-top: 10px;
+        margin: 0;
+    }
+
+    .fa-10x {
+        font-size: 8em;
+    }
+
+    input, textarea {
+        width: 700px;
+    }
+
+    
+    option {
+        font-size: 1rem;
+    }
+
+    .black {
+        top: 425px;
+        width: 500px;
+        margin: 0 250px;
+    }
+
+    .text p{
+        font-size: 5rem;
+    }
+
+    .about {
+        min-width: 1000px;
+    }
+}

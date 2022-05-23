@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8abae1f899.js" crossorigin="anonymous"></script>
+    <title>Adopción de mascotas</title>
+</head>
+<body class="contact">
+    <div class="container">
+        <div class="degrade">
+            <nav class="nav">
+                <a href="index.html#inicio">
+                    <img src="/img/logo-black.png" alt="">
+                </a>
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_link" href="index.html#adoptar">
+                            Adoptar
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="index.html#centros">
+                            Centros
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-contact">
+            <div class="left-contact">
+                <h1>Contacto</h1>
+                <img src="/img/png-transparent-cute-golden-pet-dog-other-animals-pet-removebg-preview.png" alt="dog">
+            </div>
+            <div class="right-contact">
+                <div class="social-networks">
+                    <a href="https://www.youtube.com">
+                        <i class="fa-brands fa-youtube fa-10x yt"></i>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <i class="fa-brands fa-instagram fa-10x ig"></i>
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <i class="fa-brands fa-facebook fa-10x fb"></i>
+                    </a>
+                    <a href="https://wa.me/5491138305340">
+                        <i class="fa-brands fa-whatsapp fa-10x wpp"></i>
+                    </a>
+                </div>
+                <hr class="black">
+                <form id="form">
+                    <input type="text" name="" id="name" placeholder="Nombre y Apellido">
+                    <input type="email" name="" id="email" placeholder="E-mail">
+                    <select name="" id="motive" required>
+                        <option value="" selected disabled>Selecionar motivo</option>
+                        <option value="">Adoptación</option>
+                        <option value="">Sugerencia o comentario</option>
+                        <option value="">Pregunta</option>
+                    </select>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Escriba su mensaje" required></textarea>
+                    <button class="btnForm" type="submit">Enviar</button>
+                    <p class="warnings" id="warnings"></p>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
